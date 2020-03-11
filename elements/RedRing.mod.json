@@ -1,0 +1,30 @@
+{
+  "_fv": 5,
+  "_type": "item",
+  "definition": {
+    "renderType": 0,
+    "texture": "sonicexe_red_ring",
+    "customModelName": "Normal",
+    "name": "Red Ring",
+    "creativeTab": {
+      "value": "CUSTOM:SML64Mods"
+    },
+    "stackSize": 64,
+    "enchantability": 0,
+    "useDuration": 0,
+    "toolType": 1.0,
+    "damageCount": 0,
+    "destroyAnyBlock": false,
+    "stayInGridWhenCrafting": false,
+    "enableMeleeDamage": true,
+    "damageVsEntity": 10.0,
+    "specialInfo": [],
+    "hasGlow": false,
+    "onRightClickedOnBlock": {
+      "name": "RedRingRightClickedOnBlock"
+    },
+    "onEntityHitWith": {
+      "name": "RedRingMobIsHitWithItem"
+    }
+  }
+}
