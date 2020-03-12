@@ -25,6 +25,7 @@ import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.entity.monster.EntityZombie;
 import net.minecraft.entity.ai.EntityAINearestAttackableTarget;
 import net.minecraft.entity.ai.EntityAIHurtByTarget;
+import net.minecraft.entity.ai.EntityAIAttackMelee;
 import net.minecraft.entity.SharedMonsterAttributes;
 import net.minecraft.entity.EnumCreatureType;
 import net.minecraft.entity.EnumCreatureAttribute;
@@ -89,6 +90,7 @@ public class MCreatorSonicEXE extends Elementssonic_exe_mod.ModElement {
 			enablePersistence();
 			this.targetTasks.addTask(1, new EntityAIHurtByTarget(this, false));
 			this.targetTasks.addTask(2, new EntityAINearestAttackableTarget(this, EntityPlayer.class, true, true));
+			this.tasks.addTask(3, new EntityAIAttackMelee(this, 1.2, false));
 		}
 
 		@Override
@@ -153,7 +155,7 @@ public class MCreatorSonicEXE extends Elementssonic_exe_mod.ModElement {
 			if (this.getEntityAttribute(SharedMonsterAttributes.MAX_HEALTH) != null)
 				this.getEntityAttribute(SharedMonsterAttributes.MAX_HEALTH).setBaseValue(400D);
 			if (this.getEntityAttribute(SharedMonsterAttributes.ATTACK_DAMAGE) != null)
-				this.getEntityAttribute(SharedMonsterAttributes.ATTACK_DAMAGE).setBaseValue(5D);
+				this.getEntityAttribute(SharedMonsterAttributes.ATTACK_DAMAGE).setBaseValue(10D);
 		}
 
 		@Override

@@ -85,6 +85,14 @@
         "0": 1,
         "1": 2
       }
+    },
+    {
+      "name": "SpongeRecipe",
+      "type": "recipe",
+      "sortid": 7,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
     }
   ],
   "variable_elements": [],
