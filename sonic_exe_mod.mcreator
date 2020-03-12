@@ -93,6 +93,14 @@
       "compiles": true,
       "locked_code": false,
       "ids": {}
+    },
+    {
+      "name": "Ring",
+      "type": "food",
+      "sortid": 8,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
     }
   ],
   "variable_elements": [],
@@ -101,7 +109,8 @@
     "en_us": {
       "item.redring.name": "Red Ring",
       "itemGroup.tabsml64mods": "SML64 Mods",
-      "entity.sonicexe.name": "Sonic.EXE"
+      "entity.sonicexe.name": "Sonic.EXE",
+      "item.ring.name": "Ring"
     }
   },
   "workspaceSettings": {
