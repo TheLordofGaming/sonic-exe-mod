@@ -41,15 +41,12 @@ public class MCreatorRedRingRightClickedOnBlock extends Elementssonic_exe_mod.Mo
 		int y = (int) dependencies.get("y");
 		int z = (int) dependencies.get("z");
 		World world = (World) dependencies.get("world");
-		if (!world.isRemote) {
-			world.createExplosion(null, (int) x, (int) y, (int) z, (float) 4, true);
-		}
 		if ((((entity instanceof EntityLivingBase) ? ((EntityLivingBase) entity).getHeldItemMainhand() : ItemStack.EMPTY).getItem() == new ItemStack(
 				MCreatorRedRing.block, (int) (1)).getItem())) {
 			if (!world.isRemote) {
 				Entity entityToSpawn = new MCreatorSonicEXE.EntityCustom(world);
 				if (entityToSpawn != null) {
-					entityToSpawn.setLocationAndAngles(x, y, z, world.rand.nextFloat() * 360F, 0.0F);
+					entityToSpawn.setLocationAndAngles(x, (y + 1), z, world.rand.nextFloat() * 360F, 0.0F);
 					world.spawnEntity(entityToSpawn);
 				}
 			}

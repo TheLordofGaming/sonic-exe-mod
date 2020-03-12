@@ -18,8 +18,10 @@
     "stayInGridWhenCrafting": false,
     "enableMeleeDamage": true,
     "damageVsEntity": 10.0,
-    "specialInfo": [],
-    "hasGlow": false,
+    "specialInfo": [
+      "Used to summon Sonic.EXE"
+    ],
+    "hasGlow": true,
     "onRightClickedOnBlock": {
       "name": "RedRingRightClickedOnBlock"
     },
